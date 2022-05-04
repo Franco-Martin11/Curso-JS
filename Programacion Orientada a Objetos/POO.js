@@ -48,9 +48,9 @@ function lugar(nombre,localidad,calle,dirección){
 
     const franco= new lugar("franco","merlo","bach",3179)
 
-    franco.Ubicacion()
+    //  franco.Ubicacion()
 
-    console.log(franco)
+    // console.log(franco)
 
     const prueba= ()=>{
         const arrPrueba = []
@@ -64,6 +64,6 @@ function lugar(nombre,localidad,calle,dirección){
         arrPrueba[i]=usuario
         usuario.Ubicacion()
     }        
-    console.log(arrPrueba)
+    // console.log(arrPrueba)
     
     }
