@@ -64,6 +64,6 @@ function lugar(nombre,localidad,calle,dirección){
         arrPrueba[i]=usuario
         usuario.Ubicacion()
     }        
-    // console.log(arrPrueba)
+    //-> console.log(arrPrueba)
     
     }
