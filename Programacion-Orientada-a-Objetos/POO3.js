@@ -13,8 +13,9 @@ class Perro {
   }
 }
 const kira = new Perro("kira", "pitbul");
-console.log(kira);
-Perro.staticFunc();
+//console.log(kira);
+
+//Perro.staticFunc();
 
 //<------Metodos Getters y Setters-------->
 
@@ -46,7 +47,7 @@ class Humano {
 }
 
 const franco1 = new Humano("franco", 1.78);
-console.log(franco1);
+//console.log(franco1);
 
 // Los valores de los metodos 'get'y 'set' se expresan en forma de (var:value) como si se tratara de un atributo del objeto.
 
