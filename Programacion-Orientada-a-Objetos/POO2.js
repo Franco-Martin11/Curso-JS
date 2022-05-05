@@ -53,7 +53,7 @@ class Tipo extends Raza {
 
 const Tison = new Tipo("tison", "macho", "root-wailer", "perro");
 
-//-> Tison.catalogoTotal();
+//--> Tison.catalogoTotal();
 
 //-> console.log(Tison);
 
