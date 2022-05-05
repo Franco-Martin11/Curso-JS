@@ -10,7 +10,7 @@
     //Para crear este PROTOTIPO se necesita un FUNCIÓN CONSTRUCTORA
 
     //FUNCIÓN CONSTRUCTORA (Se escribe en UpperCamelCase)
-
+    
     function Animal (nombre,genero){
         //Atributo
         this.nombre=nombre;
