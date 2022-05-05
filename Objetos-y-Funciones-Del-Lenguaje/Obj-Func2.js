@@ -72,3 +72,15 @@ console.log(resultado);
 
 //Eliminar el console.clear() para ver la ejecucion del codigo
 console.clear();
+
+//<----Objetos relacionados a window----->
+
+//Esta en un bloque de funcion para que no se ejecute sin ser llamada
+
+function ejecucionWindow() {
+  let aviso = alert("esto es una alerta");
+  let comfirmacion = confirm("esto es una confirmacion");
+
+  //Prompt retorna la entrada en formato de string.
+  let entradaDeDato = prompt("esto es una ventana de entrada");
+}
