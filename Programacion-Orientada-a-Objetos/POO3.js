@@ -1,4 +1,4 @@
-// <----- Metodos estaticos ------>
+// <------ Metodos estaticos ------>
 
 // Un metodo  estatico es aquel que se puede ejecutar sin crear una nueva instancia basado en el prototipo.
 
