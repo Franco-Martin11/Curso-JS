@@ -34,7 +34,7 @@ console.clear();
 
 //Cuando se usa el || , si el valor tiende a negativo (falsy) va a ejecutar la instruccion de la derecha
 
-//Falsy : null,undefined,0,"",false
+//*Falsy : null,undefined,0,"",false
 
 function saludar(nombre) {
   nombre = nombre || "desconocido";
@@ -45,7 +45,7 @@ saludar();
 
 //En cambio cuando se usa el && si el valor tiende a positivo va ejecutar la sentencia de la derecha
 
-//Truty : string,numbre,true,objet
+//*Truty : string,numbre,true,objet
 
 function saludar2(nombre) {
   nombre = nombre && "desconocido";
@@ -55,11 +55,11 @@ function saludar2(nombre) {
 saludar2("asd");
 
 //<----Parametro por defecto---->
-// En caso de que no se ingrese un parametro en una funcion se puede poner por defecto uno.
+//?En caso de que no se ingrese un parametro en una funcion se puede poner por defecto uno.
 
 let resultado = 0;
 
-//En este caso si se llama a la funcion y no se le da un parametro tomara el paramatro por defecto que definimos (10).
+//?En este caso si se llama a la funcion y no se le da un parametro tomara el paramatro por defecto que definimos (10).
 
 function suma(adicion = 10) {
   resultado = adicion * 5;
@@ -70,17 +70,18 @@ suma();
 
 console.log(resultado);
 
-//Eliminar el console.clear() para ver la ejecucion del codigo
+//*Eliminar el console.clear() para ver la ejecucion del codigo
+
 console.clear();
 
 //<----Objetos relacionados a window----->
 
-//Esta en un bloque de funcion para que no se ejecute sin ser llamada
+//!Esta en un bloque de funcion para que no se ejecute sin ser llamada
 
 function ejecucionWindow() {
   let aviso = alert("esto es una alerta");
   let comfirmacion = confirm("esto es una confirmacion");
 
-  //Prompt retorna la entrada en formato de string.
+  //!Prompt retorna la entrada en formato de string.
   let entradaDeDato = prompt("esto es una ventana de entrada");
 }
