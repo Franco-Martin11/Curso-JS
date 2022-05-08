@@ -1,4 +1,4 @@
-// Objeto Math
+//* Objeto Math
 
 //Este objeto provee a js metodos para operaciones complejas por ejemplo potenciar un numero o la raiz de un numero , etc.
 
@@ -30,7 +30,7 @@ console.log(numeroRandom);
 //Eliminar el console.clear() para ver la ejecucion del codigo
 console.clear();
 
-//Operador cortocircuito || o &&
+//*Operador cortocircuito || o &&
 
 //Cuando se usa el || , si el valor tiende a negativo (falsy) va a ejecutar la instruccion de la derecha
 
@@ -54,7 +54,7 @@ function saludar2(nombre) {
 
 saludar2("asd");
 
-//<----Parametro por defecto---->
+//*<----Parametro por defecto---->
 //?En caso de que no se ingrese un parametro en una funcion se puede poner por defecto uno.
 
 let resultado = 0;
@@ -74,7 +74,7 @@ console.log(resultado);
 
 console.clear();
 
-//<----Objetos relacionados a window----->
+//*<----Objetos relacionados a window----->
 
 //!Esta en un bloque de funcion para que no se ejecute sin ser llamada
 
