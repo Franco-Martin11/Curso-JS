@@ -35,5 +35,4 @@ console.log(regExpresion.test(cadena));
 
 console.log(regExpresion.exec(cadena));
 
-
 console.clear()
