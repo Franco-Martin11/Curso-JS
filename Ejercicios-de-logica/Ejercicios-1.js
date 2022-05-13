@@ -35,7 +35,7 @@ const Metodo2 = {
   },
 };
 
-Metodo2.repetidor("hola", 22);
+//Metodo2.repetidor("hola", 22);
 
 //* Ejercicio refactor
 
