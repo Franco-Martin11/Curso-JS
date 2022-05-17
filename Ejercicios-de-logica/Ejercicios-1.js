@@ -60,3 +60,59 @@ const devolver = (string = " ", separador = undefined) =>
     : console.info(cadena.split(separador));
 
 //devolver(""," ")
+
+//*Ejercicio 5
+
+function reverse(txt) {
+  const textoNuevo = txt.split("").reverse().join("");
+  return textoNuevo;
+}
+
+reverse("ssdewdasd");
+
+const reversa = (txt2) =>
+  !txt2
+    ? console.warn("es una cadena vacia")
+    : (txt2 = txt2.split("").reverse().join(""));
+
+//? '.split' convierte un string a un array , el '.reverse' invierte la matriz del arreglo y con '.join("")' convertimos el arreglo a una string .
+reversa("lorem1123123kj12kjskdbakjsdnkajsndasdfad");
+//*Ejercico 6
+let textoAEncontrar = "hola me llamo franco, soy de franco".slice("");
+
+const contador = (text = "", palabra = "") => {
+  if (!text) return console.warn("es una cadena vacia");
+  if (!palabra) return console.warn("es una cadena vacia");
+
+  let i = 0;
+  let cont = 0;
+
+  while (i !== -1) {
+    i = text.indexOf(palabra, i);
+    if (i !== -1) {
+      i++;
+      cont++;
+    }
+  }
+  return console.info(
+    `la palabra ${palabra} se repite ${cont} veces en la frase '${text}'`
+  );
+};
+
+//*Ejercicio 7
+
+const Palindromo = (palabra) => {
+  let palabraOriginal = palabra.toUpperCase();
+  let palabraReverse = palabraOriginal.split("").reverse().join("");
+  const palindromo =
+    palabraOriginal === palabraReverse
+      ? console.info(
+          `la palabla ${palabraOriginal} es un palindromo, al reves es ${palabraReverse}`
+        )
+      : console.info(
+          `${palabraOriginal} no es un palindromo, palabla al reves ${palabraReverse}`
+        );
+  return palindromo;
+};
+
+

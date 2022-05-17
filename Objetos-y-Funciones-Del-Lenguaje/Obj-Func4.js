@@ -14,18 +14,16 @@
 
 //Todo: Con esta tecnica se pueden hacer scripts/plugins o abreviaturas para sintetizar el trabajo
 
-(function (c) {
+/*(function (c) {
   c.log("esto es una prueba");
-})(console);
+})(console);*/
 
 //? Al pasar el objeto 'console' por parametro , se puede usar dentros de la funcion sin solo llamando a el nombre de referencia de dicho parametro en este caso la letra 'c'.
 
 
 //*Hay una manera mas abreviada de nombrar a una funcion IIFE y es utilizando el simbolo de admiración.
 
-!(function (cns) {
+/*!(function (cns) {
   let nombre = "franco";
   cns.log(`mi nombre es ${nombre}`);
-})(console);
-
-console.clear();
+})(console);*/
