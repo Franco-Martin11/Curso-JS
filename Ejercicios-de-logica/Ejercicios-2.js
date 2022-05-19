@@ -44,24 +44,6 @@ const Factorial = (factor) => {
 ? 14) Programa una función para convertir grados Celsius a Fahrenheit y viceversa, pe. miFuncion(0,"C") devolverá 32°F.
 */
 
-const ConversorTemp = (temp, tipo) => {
-  if (!temp || !tipo) {
-    console.warn("complete ambas casillas");
-  } else if ((temp !== Number, tipo !== String)) {
-    console.warn("Coloque los datos correctamente");
-  }
-
-  if (tipo === "C") {
-    let resultado = (temp * 9) / 5 + 32;
-    return resultado;
-  } else if (tipo === "F") {
-    let resultado = ((temp - 32) * 5) / 9;
-    return resultado;
-  } else {
-    console.warn("coloque un tipo de grados correcto , F o C");
-  }
-};
-
 //* (1)
 const Primo = (num) => {
   let contador = 0;
@@ -87,3 +69,21 @@ const Par = (numero) => {
 };
 
 //*(3)
+
+const ConversorTemp = (temp, tipo) => {
+  if (!temp || !tipo) {
+    console.warn("complete ambas casillas");
+  } else if ((temp !== Number, tipo !== String)) {
+    console.warn("Coloque los datos correctamente");
+  }
+
+  if (tipo === "C") {
+    let resultado = (temp * 9) / 5 + 32;
+    return resultado;
+  } else if (tipo === "F") {
+    let resultado = ((temp - 32) * 5) / 9;
+    return resultado;
+  } else {
+    console.warn("coloque un tipo de grados correcto , F o C");
+  }
+};
