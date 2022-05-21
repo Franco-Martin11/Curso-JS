@@ -87,3 +87,49 @@ const ConversorTemp = (temp, tipo) => {
     console.warn("coloque un tipo de grados correcto , F o C");
   }
 };
+
+//*18) Programa una función que dada una cadena de texto cuente el número de vocales y consonantes, pe. miFuncion("Hola Mundo") devuelva Vocales: 4, Consonantes: 5.
+
+const NumVocales = (String) => {
+  !String
+    ? console.warn("Ingrese una palabra")
+    : String === Number
+    ? console.warn("No se permiten Numeros")
+    : console.info("Ingresado satisfactoriamente");
+
+  let vocales = "aeiou";
+  let cantidadVocales = 0;
+  let cantidadConsonantes = 0;
+  for (let letra of String) {
+    if (vocales.includes(letra)) {
+      cantidadVocales++;
+    } else if (letra === " ") {
+    } else {
+      cantidadConsonantes++;
+    }
+  }
+
+  console.log({
+    cantidadConsonantes,
+    cantidadVocales,
+  });
+};
+
+//* 19) Programa una función que valide que un texto sea un nombre válido, pe. miFuncion("Jonathan MirCha") devolverá verdadero.
+const nombre = "franco";
+const MiNombre = (name) => name === nombre;
+
+//* 20) Programa una función que valide que un texto sea un email válido, pe. miFuncion("jonmircha@gmail.com") devolverá verdadero.
+
+const Signo = {
+  arroba: "@",
+  punto: ".",
+  dominio: "com",
+};
+
+const Validacion = (email) => {
+  email.search(Signo) !== -1
+    ? console.log("funciona")
+    : console.log("no es valido");
+  console.log(email.search(Signo));
+};
