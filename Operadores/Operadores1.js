@@ -1,3 +1,21 @@
+//* Operador Ternario
+
+//? Este operador te permite abreviar un condicional de manera rapida y en  solo una linea
+
+const ternarioVar = 2(ternarioVar !== 0) ? "Hola" : "Chau";
+
+// En este caso si la variable 'ternarioVar' es diferente a 0 retorna 'hola' sino 'chau'
+
+/*
+* Ventajas
+? Tiene un return explicito
+? Simplifica un condicional
+
+* Desventajas
+? Se torna dificil de leer si se añida
+*/
+
+
 //* Spread Operator
 //? Este operador se usa para concatenar de manera rapida 2:+ arrays/objetos
 
