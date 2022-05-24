@@ -65,6 +65,9 @@ const Hammling = (string1, string2) => {
 ? + : Este atributo hace referencia a la aparicion del patron (en este caso '\s'). El patron debe aparecer como minimo una vez.
 
 * /g : Es una flag que hace referencial al ambito global del string.
+
+todo: Se puede usar el metodo .trim() para eliminar los espacios de los extremos y tener una mejor validacion de los datos ingresados por parametro
+
 */
 const contadorDePalabras = (string) => {
   const regExp1 = /\s+/g;
