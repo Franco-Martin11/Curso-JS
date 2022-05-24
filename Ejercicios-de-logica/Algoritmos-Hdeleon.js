@@ -55,10 +55,17 @@ const Hammling = (string1, string2) => {
     : metodoHammling();
 };
 
-//contador de palabras
+//*Contador de palabras
 
-//("Hola que tal franco,Hola midu");
+/*
+*RegExp 
+  Se inicia y finaliza con barra /.../
+? \s : Este patron hace referencia a los espacios en blanco, saltos de linea y tabulaciones.
 
+? + : Este atributo hace referencia a la aparicion del patron (en este caso '\s'). El patron debe aparecer como minimo una vez.
+
+* /g : Es una flag que hace referencial al ambito global del string.
+*/
 const contadorDePalabras = (string) => {
   const regExp1 = /\s+/g;
   string = string.replace(regExp1, " ");
@@ -69,14 +76,17 @@ const contadorDePalabras = (string) => {
   return objetoReg;
 };
 
+//? {...'Spread operator'} para cambiar de array a un objeto.
+
+//*Contar caracteres de una cadena
+
 /*
-*RegExp 
-  Se inicia y finaliza con barra //
+ ? El metodo .replace(x,y) recibe 2 parametros.El parametro x= RegEx:y=Modifier.
+ */
 
-? \s : Este patron hace referencia a los espacios en blanco, saltos de linea y tabulaciones.
-
-? + : Este atributo hace referencia a la aparicion del patron (en este caso '\s'). El patron debe aparecer como minimo una vez.
-
-* /g : Es una flag que hace referencial al ambito global del string.
-
-*/
+function contadorCaracteres(string) {
+  !string
+    ? console.warn("el string esta vacio")
+    : (string = string.replace(/\s+/g, "").length);
+  return string;
+}
