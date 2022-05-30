@@ -38,7 +38,7 @@ const NumeroMaximo = (array) => {
 
 //? 23) Programa una función que dado un array de números devuelva un objeto con 2 arreglos en el primero almacena los números pares y en el segundo los impares, pe. miFuncion([1,2,3,4,5,6,7,8,9,0]) devolverá {pares: [2,4,6,8,0], impares: [1,3,5,7,9]}.
 
-const arrayPI = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+let arrayPI = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
 const ParesImpares = () => {
   const arrayPares = [];
@@ -74,5 +74,44 @@ const Ordenamiento = (...element) => {
       }
     }
   }
-  console.log({OrdenAscendente}, {OrdenDecentente});
+  console.log({ OrdenAscendente }, { OrdenDecentente });
+};
+
+//? 25) Programa una función que dado un arreglo de elementos, elimine los duplicados, pe. miFuncion(["x", 10, "x", 2, "10", 10, true, true]) devolverá ["x", 10, 2, "10", true].
+
+//* El constructor 'Set' solo devuelve elementos unicos
+
+const validacionDeDuplicados = (array) => {
+  let data = array;
+  const DataResolve = new Set(data);
+  let result = [...DataResolve];
+  return result;
+};
+
+//! Segunda Opcion
+
+//? El metodo para array '.include(x)' analiza el array viendo si incluye el valor de su parametro, en este caso mediante el forEach si el array no incluye el elemento se utiliza el metodo '.push(x)' para agregarlo.
+
+const validacionDeDuplicados2 = (array) => {
+  let data = array;
+  let resultado = [];
+  data.forEach((element) => {
+    !resultado.includes(element) ? resultado.push(element) : "";
+  });
+  return resultado;
+};
+
+//? 26) Programa una función que dado un arreglo de números obtenga el promedio, pe. promedio([9,8,7,6,5,4,3,2,1,0]) devolverá 4.5.
+
+const arrayparapromediar = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
+
+//? El spreadOperator implicitamente convierte al parametro en Array
+
+const ArrayPromedioo = (...array) => {
+  let acumulador = 0;
+  array.forEach((element) => {
+    acumulador += element;
+  });
+
+  return acumulador / array.length;
 };
