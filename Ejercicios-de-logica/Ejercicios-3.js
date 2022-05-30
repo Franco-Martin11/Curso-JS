@@ -54,3 +54,25 @@ const ParesImpares = () => {
 
   console.log({ Pares: [...arrayImpares] }, { Impares: [...arrayPares] });
 };
+
+//* Ejercicios 24:26
+
+//? 24) Programa una función que dado un arreglo de números devuelva un objeto con dos arreglos, el primero tendrá los numeros ordenados en forma ascendente y el segundo de forma descendiente, pe. miFuncion([7, 5,7,8,6]) devolverá { asc: [5,6,7,7,8], desc: [8,7,7,6,5] }.
+
+const Ordenamiento = (...element) => {
+  const OrdenAscendente = [element];
+  let OrdenDecentente = OrdenAscendente.reverse().join().split();
+
+  //?console.log(arrayAnalizar)
+
+  for (let index = 0; index < OrdenAscendente.length; index++) {
+    for (let index = 0; index < OrdenAscendente.length; index++) {
+      if (OrdenAscendente[index] >= OrdenAscendente[index + 1]) {
+        let flag = OrdenAscendente[index];
+        OrdenAscendente[index] = OrdenAscendente[index + 1];
+        OrdenAscendente[index + 1] = flag;
+      }
+    }
+  }
+  console.log({OrdenAscendente}, {OrdenDecentente});
+};
