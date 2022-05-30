@@ -93,3 +93,15 @@ function contadorCaracteres(string) {
     : (string = string.replace(/\s+/g, "").length);
   return string;
 }
+
+//*Ejercicios Hola Mundo
+
+//? Multiplicar un numero sin usar el operador de multiplicacion '*'
+
+const multiply = (a, b) => {
+  let resultado = 0;
+  for (let index = 0; index < b; index++) {
+    resultado += a;
+  }
+  return resultado;
+};
