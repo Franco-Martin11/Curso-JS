@@ -7,5 +7,17 @@
 
 setTimeout(() => {
   console.warn("esto es un callback con timeout");
-}, 3000);
+}, 2500);
+
+
+
+//* SetInterval
+//? Esta funcion tambien recibe un callback el cual se ejecuta indefinida veces , tambien recibe un parametro de time en formato ms.
+
+/*
+setInterval(() => {
+  console.log(new Date().toLocaleTimeString());
+}, );*/
+
+
 
