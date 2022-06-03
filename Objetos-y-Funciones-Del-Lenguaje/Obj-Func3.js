@@ -29,10 +29,9 @@ let regExpresion = /elit/g;
 
 //El metodo 'test' devuelve un boolean si se cumple la condicicion de la expresion.
 
-console.log(regExpresion.test(cadena));
+//*console.log(regExpresion.test(cadena));
 
 //El metodo 'exec' devuelve un array con todos los detalles de la busqueda (index,input,element.etc)
 
-console.log(regExpresion.exec(cadena));
+//*console.log(regExpresion.exec(cadena));
 
-console.clear()
