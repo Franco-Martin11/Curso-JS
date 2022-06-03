@@ -119,12 +119,5 @@ class Pelicula {
 
 const nuevaPelicula = new Pelicula({ id: "" });
 
-function prueba(getArray, Array) {
-  let resultado;
-  for (let i = 0; i < getArray.length; i++) {
-    Array.forEach((element) => {
-      return resultado = element === getArray[i];
-    });
-  }
-  console.log(resultado)
-}
+
+console.clear()
