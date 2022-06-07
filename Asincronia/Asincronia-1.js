@@ -5,9 +5,11 @@
 //*SetTimeout
 //? SetTimeout recibe un callback (Es decir una funcion a ejecutar) y luego un parametro donde se escribiria en ms luego de que tiempo se ejecuta ese callback
 
+/*
 setTimeout(() => {
   console.warn("esto es un callback con timeout");
 }, 2500);
+*/
 
 //* SetInterval
 //? Esta funcion tambien recibe un callback el cual se ejecuta indefinida veces , tambien recibe un parametro de time en formato ms.
@@ -52,5 +54,3 @@ clearInterval(intervalo);
 //* Operaciones Sincrona y Asincrona
 
 //? Hace referencia a la respuesta de ejecucion , en el caso de operaciones Sincronas la respuesta de la ejecucion es de tipo bloqueante. Es decir la ejecucion va a parar el hilo principal del codigo y hasta que dicha operacion no de una respuesta no continuara la ejecucion del codigo principal. En cambio, Asincrono es lo contrario no espera que la respuesta de la ejecucion sea instantanea, por lo tanto devuelve el curso del hilo principal del codigo y luego cuando sea estipulado devolvera la respuesta a la  ejecucion anteriormente llamada.
-
-
