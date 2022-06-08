@@ -73,5 +73,56 @@ function PromiseFunc(value) {
 */
 
 PromiseFunc(22)
-  .then((obj) => console.log(`resolve ${obj.result}, ${obj.value}`))
+  .then((obj) => {
+    console.log(`resolve ${obj.result}, ${obj.value}`);
+    return PromiseFunc(5);
+  })
+
+  .then((obj) => {
+    console.log(`resolve ${obj.result}, ${obj.value}`);
+    return PromiseFunc(6);
+  })
+
+  .then((obj) => {
+    console.log(`resolve ${obj.result}, ${obj.value}`);
+    return PromiseFunc(8);
+  })
+
+  .then((obj) => {
+    console.log(`resolve ${obj.result}, ${obj.value}`);
+  })
+
+  .then((obj) => {
+    console.log(`fin`);
+  })
   .catch();
+
+//*-------------->
+
+//? En este caso  el metodo '.catch' para la funcion va recibir el error definido en el parametro del 'Promise.reject(`esto es un error`)'
+
+function PromiseFuncNegada(value) {
+  if (typeof value !== "number")
+    return Promise.reject(`es un error de tipo de dato`);
+
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve({
+        value,
+        result: value * 50,
+      });
+    }, Math.random() * 5000);
+  });
+}
+
+PromiseFuncNegada(11)
+  .then((obj) => {
+    console.log(`resolve ${obj.result}, ${obj.value}`);
+    return PromiseFuncNegada("12");
+  })
+  .then((obj) => {
+    console.log(`resolve ${obj.result}, ${obj.value}`);
+  })
+  .catch((error) => console.warn(error));
+
+//* Una vez que se ejecuta el catch porque encuentra un error se para el flujo de ejecucion.
