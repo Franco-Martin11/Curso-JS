@@ -31,7 +31,8 @@ const ArrayFilter = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 //* El parametro 'e' hace referencia a el elemento ejecutado, este metodo por implicitamente hace una especie de 'forEach()' que analiza una condicion y mediante ese analisis hace un '.push()' a un nuevo array.
 
-let numFiltrados = ArrayFilter.filter((e) => e > 5 || e === 3);
+let numFiltrados = ArrayFilter.filter((e) => e > 4 && e <= 8);
 
 //console.log(numFiltrados);
 //console.log(ArrayFilter);
+
