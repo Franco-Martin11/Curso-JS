@@ -71,7 +71,7 @@ function PromiseFunc(value) {
 
  * .catch() : es el metodo que va a capturar y recibir el error explicitado en el 'REJECT'
 */
-
+/*
 PromiseFunc(22)
   .then((obj) => {
     console.log(`resolve ${obj.result}, ${obj.value}`);
@@ -96,12 +96,12 @@ PromiseFunc(22)
     console.log(`fin`);
   })
   .catch();
-
+*/
 //*-------------->
 
 //? En este caso  el metodo '.catch' para la funcion va recibir el error definido en el parametro del 'Promise.reject(`esto es un error`)'
 
-function PromiseFuncNegada(value) {
+/*function PromiseFuncNegada(value) {
   if (typeof value !== "number")
     return Promise.reject(`es un error de tipo de dato`);
 
@@ -113,9 +113,9 @@ function PromiseFuncNegada(value) {
       });
     }, Math.random() * 5000);
   });
-}
+}*/
 
-PromiseFuncNegada(11)
+/*PromiseFuncNegada(11)
   .then((obj) => {
     console.log(`resolve ${obj.result}, ${obj.value}`);
     return PromiseFuncNegada("12");
@@ -123,6 +123,6 @@ PromiseFuncNegada(11)
   .then((obj) => {
     console.log(`resolve ${obj.result}, ${obj.value}`);
   })
-  .catch((error) => console.warn(error));
+  .catch((error) => console.warn(error));*/
 
 //* Una vez que se ejecuta el catch porque encuentra un error se para el flujo de ejecucion.

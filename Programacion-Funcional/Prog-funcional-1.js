@@ -36,3 +36,20 @@ let numFiltrados = ArrayFilter.filter((e) => e > 4 && e <= 8);
 //console.log(numFiltrados);
 //console.log(ArrayFilter);
 
+//* Metodo '.map()' para los arreglos lo que hace es por cada elemento hacer una operacion
+
+// En este caso la operacione que va a hacer es una multiplicacion de cada elemento del array
+//? Este metodo al igual que los demas no modifica el array original sino que crea un array nuevo con los resultados
+let numMap = ArrayFilter.map((e) => e * 5);
+
+//console.log(numMap);
+
+//* Metodo '.reduce()' para los arreglos , lo que hace es reducir el valor de todos los elementos en uno solo para ello recibe por parametro 2 variables , una que va a guardar el acumulado (acc) y otra que va a representar el elemento(e).
+
+//? reduce hace un recorrido por todo el array y devuelve la reduccion del elemento, en un solo elemento .
+
+let numReduce = ArrayFilter.reduce((acc, e) => acc + e, 0);
+
+// El segundo parametro del bloque de codigo especifica el valor inicial del acc ,
+
+//! console.log(numReduce);
