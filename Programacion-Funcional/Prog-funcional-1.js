@@ -15,7 +15,7 @@ let fnOrdenSuperior = (fn) => {
   return result;
 };
 
-fnOrdenSuperior(fnPrimerOrden(22, 2));
+//  fnOrdenSuperior(fnPrimerOrden(22, 2));
 
 //* Este paradigma metodos ya predeterminados que se pueden usar
 
@@ -52,4 +52,4 @@ let numReduce = ArrayFilter.reduce((acc, e) => acc + e, 0);
 
 // El segundo parametro del bloque de codigo especifica el valor inicial del acc ,
 
-//! console.log(numReduce);
+//console.log(numReduce);
