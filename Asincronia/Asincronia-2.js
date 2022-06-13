@@ -57,7 +57,7 @@ function PromiseFunc(value) {
         value,
         result: value * 5,
       });
-    }, Math.random() * 100);
+    }, Math.random() * 1500);
   });
 }
 
@@ -101,7 +101,7 @@ PromiseFunc(22)
 
 //? En este caso  el metodo '.catch' para la funcion va recibir el error definido en el parametro del 'Promise.reject(`esto es un error`)'
 
-/*function PromiseFuncNegada(value) {
+function PromiseFuncNegada(value) {
   if (typeof value !== "number")
     return Promise.reject(`es un error de tipo de dato`);
 
@@ -113,7 +113,7 @@ PromiseFunc(22)
       });
     }, Math.random() * 5000);
   });
-}*/
+}
 
 /*PromiseFuncNegada(11)
   .then((obj) => {
