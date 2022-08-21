@@ -24,3 +24,25 @@ const funcionCall = (callback, items) => {
 };
 
 console.log(funcionCall(multiply(224, 2), 26));
+
+///>>>>>>>>
+
+const procedimientos = (items, items2) => {
+  const suma = items + items2;
+  const resta = items - items2;
+  const modulo = suma % 2 === 0 ? "es primo" : "no es primo";
+  const multiply = items * items2 * items;
+  return [suma, resta, modulo, multiply];
+};
+
+const funcionProcedimiento = (procedimiento, cantidad) => {
+  const newArray = [];
+  for (let i = 1; i <= cantidad; i++) {
+    newArray.push(procedimiento);
+  }
+  return newArray;
+};
+
+const resultado = funcionProcedimiento(procedimientos(2, 10), 3);
+
+console.log(resultado);
